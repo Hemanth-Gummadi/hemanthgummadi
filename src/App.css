@@ -6,7 +6,7 @@
 
 .landing-grid {
   background: #833ab4;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);  /* Chrome 10-25, Safari 5.1-6 */
+ background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   text-align: center;
   position: fixed;
@@ -38,6 +38,23 @@
   padding-top: 2em;
 }
 
+.About-me-BG {
+  background: white;
+  height: 100%;
+   left: 0;
+   width: 100%;
+   overflow: hidden;
+}
+
+.resume-BG{
+  background: white;
+  height: 100%;
+   left: 0;
+   width: 100%;
+   overflow: hidden;
+   position: sticky;
+   margin: auto;
+}
 .contact-grid {
   text-align: center;
   justify-content: center;
@@ -82,6 +99,7 @@
   width: 75%;
   margin: auto;
   border-radius: 10px;
+
 }
 
 .banner-text h1 {
@@ -99,18 +117,37 @@
 .banner-text p {
   color: white;
   font-size: 20px;
-  padding: 1em;
+
 }
 
 .social-links {
   display: flex;
   justify-content: space-between;
-  width: 50%;
+  width: 60%;
   margin: auto;
+  margin-top:0px;
+
+
 }
 
 .social-links i {
   color: white;
   font-size: 5em;
   padding: 8px;
+}
+
+.button {
+	background-color: #FF7C00;
+	border: 2px solid white;
+	border-radius: 30px;
+	text-decoration: none;
+	padding: 10px 28px;
+	color: White;
+	margin-top: 10px;
+	display: inline-block;
+	&:hover {
+		background-color: white;
+		color: $blue;
+		border: 2px solid $blue;
+	}
 }

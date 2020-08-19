@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Grid, Cell } from 'react-mdl';
-import logo from './Logo.png'
+import logo from './Logo.png';
+import AWS from './AWS.png';
+import ORACLE from './oracle.png';
 
 class Landing extends Component {
   render() {
@@ -17,31 +19,39 @@ class Landing extends Component {
             <div className="banner-text">
               <h1>Java Full Stack Developer</h1>
 
-            <hr/>
+
 
           <p>Java(1.11) | Spring MVC/boot | Web services | Oracle sql | React Native | Devops | Maven | Gradle</p>
 
         <div className="social-links">
 
           {/* LinkedIn */}
-          <a href="http://google.com" rel="noopener noreferrer" target="_blank">
+          <a href="https://www.linkedin.com/in/hemanth-gummadi-060bb3112/" rel="noopener noreferrer" target="_blank">
             <i className="fa fa-linkedin-square" aria-hidden="true" />
           </a>
 
-          {/* Github */}
-          <a href="http://google.com" rel="noopener noreferrer" target="_blank">
-            <i className="fa fa-github-square" aria-hidden="true" />
-          </a>
+        <a href="https://aw.certmetrics.com/amazon/public/verification.aspx">
+        <img
+        src={AWS} alt=""
+        style={{
+           width: 80,
+           height: 80,
+           marginRight: 2
+        }}
+        />
+        </a>
 
-          {/* Freecodecamp */}
-          <a href="http://google.com" rel="noopener noreferrer" target="_blank">
-            <i className="fa fa-free-code-camp" aria-hidden="true" />
-          </a>
 
-          {/* Youtube */}
-          <a href="http://google.com" rel="noopener noreferrer" target="_blank">
-            <i className="fa fa-youtube-square" aria-hidden="true" />
-          </a>
+        <a href="https://education.oracle.com/java-se-11-programmer-i/pexam_1Z0-815">
+        <img
+        src={ORACLE} alt=""
+        style={{
+           width: 80,
+           height: 80,
+           marginRight: 2
+        }}
+        />
+        </a>
 
         </div>
             </div>

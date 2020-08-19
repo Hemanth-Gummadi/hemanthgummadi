@@ -17,7 +17,8 @@ class App extends Component {
                 <Link to="/aboutme">About Me</Link>
                 <Link to="/projects">Projects</Link>
                 <Link to="/contact">Contact</Link>
-                <Link to="/contact">Test</Link>
+                <Link to="/downloads">Downloads</Link>
+                <Link to="/certifications">Certifications</Link>
 
             </Navigation>
         </Header>
@@ -27,6 +28,8 @@ class App extends Component {
               <Link to="/aboutme">About Me</Link>
               <Link to="/projects">Projects</Link>
               <Link to="/contact">Contact</Link>
+              <Link to="/downloads">Downloads</Link>
+              <Link to="/certifications">Certifications</Link>
             </Navigation>
         </Drawer>
         <Content>
@@ -34,6 +37,50 @@ class App extends Component {
             <Main/>
         </Content>
     </Layout>
+
+    <Grid className="landing-grid">
+      <Cell col={12}>
+        <img
+          src={logo}
+          alt="avatar"
+          className="avatar-img"
+          />
+
+        <div className="banner-text">
+          <h1>Java Full Stack Developer</h1>
+
+        <hr/>
+
+      <p>Java(1.11) | Spring MVC/boot | Web services | Oracle sql | React Native | Devops | Maven | Gradle</p>
+
+    <div className="social-links">
+
+      {/* LinkedIn */}
+      <a href="http://google.com" rel="noopener noreferrer" target="_blank">
+        <i className="fa fa-linkedin-square" aria-hidden="true" />
+      </a>
+
+      {/* Github */}
+      <a href="http://google.com" rel="noopener noreferrer" target="_blank">
+        <i className="fa fa-github-square" aria-hidden="true" />
+      </a>
+
+      {/* Freecodecamp */}
+      <a href="http://google.com" rel="noopener noreferrer" target="_blank">
+        <i className="fa fa-free-code-camp" aria-hidden="true" />
+      </a>
+
+      {/* Youtube */}
+      <a href="http://google.com" rel="noopener noreferrer" target="_blank">
+        <i className="fa fa-youtube-square" aria-hidden="true" />
+      </a>
+
+    </div>
+        </div>
+      </Cell>
+    </Grid>
+
+
     </div>
 );
   }

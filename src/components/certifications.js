@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import { Tabs, Tab, Grid, Cell } from 'react-mdl';
-import test from './13219.jpg'
+import AWS from './assets/AWS_cert.png'
+import Java1 from './assets/Java_Cert1.jpg'
+import Java2 from './assets/Java_cert2.jpg'
+
 
 
 class Certifications extends Component {
@@ -15,13 +18,15 @@ class Certifications extends Component {
     if(this.state.activeTab === 0){
       return(
         <div>
-            <img src={test} alt="" />
+            <img src={AWS} alt="" width="1000"/>
            </div>
       )
     } else if(this.state.activeTab === 1) {
       return (
         <div>
-            <img src={test} alt="" />
+            <img src={Java1} alt="" width="400" />
+            <img src={Java2} alt="" />
+
            </div>
 
       )

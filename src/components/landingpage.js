@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Grid, Cell } from 'react-mdl';
-import logo from './Logo.png';
-import AWS from './AWS.png';
-import ORACLE from './oracle.png';
+import logo from './assets/Logo.png';
+import AWS from './assets/AWS.png';
+import ORACLE from './assets/oracle.png';
 
 class Landing extends Component {
   render() {
@@ -18,6 +18,8 @@ class Landing extends Component {
 
             <div className="banner-text">
               <h1>Java Full Stack Developer</h1>
+              <hr/>
+              <br></br>
 
 
 

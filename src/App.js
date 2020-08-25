@@ -4,7 +4,9 @@ import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl';
 import Main from './components/main';
 import { Link } from 'react-router-dom';
 import { Grid, Cell } from 'react-mdl';
-import logo from './Logo.png'
+import logo from './components/assets/Logo.png'
+import AWS from './components/assets/AWS.png';
+import ORACLE from './components/assets/oracle.png';
 
 class App extends Component {
   render() {
@@ -49,31 +51,41 @@ class App extends Component {
         <div className="banner-text">
           <h1>Java Full Stack Developer</h1>
 
-        <hr/>
+
+          <hr/>
+          <br></br>
 
       <p>Java(1.11) | Spring MVC/boot | Web services | Oracle sql | React Native | Devops | Maven | Gradle</p>
 
     <div className="social-links">
 
       {/* LinkedIn */}
-      <a href="http://google.com" rel="noopener noreferrer" target="_blank">
+      <a href="https://www.linkedin.com/in/hemanth-gummadi-060bb3112/" rel="noopener noreferrer" target="_blank">
         <i className="fa fa-linkedin-square" aria-hidden="true" />
       </a>
 
-      {/* Github */}
-      <a href="http://google.com" rel="noopener noreferrer" target="_blank">
-        <i className="fa fa-github-square" aria-hidden="true" />
-      </a>
+    <a href="https://aw.certmetrics.com/amazon/public/verification.aspx">
+    <img
+    src={AWS} alt=""
+    style={{
+       width: 80,
+       height: 80,
+       marginRight: 2
+    }}
+    />
+    </a>
 
-      {/* Freecodecamp */}
-      <a href="http://google.com" rel="noopener noreferrer" target="_blank">
-        <i className="fa fa-free-code-camp" aria-hidden="true" />
-      </a>
 
-      {/* Youtube */}
-      <a href="http://google.com" rel="noopener noreferrer" target="_blank">
-        <i className="fa fa-youtube-square" aria-hidden="true" />
-      </a>
+    <a href="https://education.oracle.com/java-se-11-programmer-i/pexam_1Z0-815">
+    <img
+    src={ORACLE} alt=""
+    style={{
+       width: 80,
+       height: 80,
+       marginRight: 2
+    }}
+    />
+    </a>
 
     </div>
         </div>

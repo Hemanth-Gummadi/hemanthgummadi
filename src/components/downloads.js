@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Tabs, Tab, Grid, Cell, Card,CardTitle, CardText, CardActions, Button} from 'react-mdl';
-import PDF from './PDF.png';
-import WORD from './WORD.png';
-import AWS from './C_AWS.png';
-import ORACLE from './oracle.png';
+import PDF from './assets/PDF.png';
+import WORD from './assets/WORD.png';
+import AWS from './assets/C_AWS.png';
+import ORACLE from './assets/oracle.png';
 import FileSaver from 'file-saver';
 
 
@@ -16,20 +16,47 @@ class Downloads extends Component {
   }
 
 
+   timeLeft(event) {
+     if(event ==='pdfTime'){
+       var dateUploaded =  new Date(Date.UTC(2020,7,24));
+    }if(event ==='docTime'){
+   dateUploaded =  new Date(Date.UTC(2020,7,24));
+    }
+ var dateNow = new Date();
+ var seconds = Math.floor((dateNow - (dateUploaded))/1000);
+ var minutes = Math.floor(seconds/60);
+ var hours = Math.floor(minutes/60);
+ var days = Math.floor(hours/24);
+ hours = hours-(days*24);
+ minutes = minutes-(days*24*60)-(hours*60);
+ seconds = seconds-(days*24*60*60)-(hours*60*60)-(minutes*60);
+                   return '      last Updated '+ days +'days, '+hours+'hrs ago.'
+  }
+
 
   fileDownloader(event) {
     if(event.currentTarget.value==='PDF'){
+        FileSaver.saveAs(
+         process.env.PUBLIC_URL + "/resource/Resume_PDF.pdf",
+         "Resume_Hemanth_Gummadi_8328625444_8886866633");
+       }
+    if(event.currentTarget.value==='doc'){
+         FileSaver.saveAs(
+         process.env.PUBLIC_URL + "/resource/Resume_doc.docx",
+           "Resume_Hemanth_Gummadi_8328625444_8886866633"); }
+    if(event.currentTarget.value==='AWS'){
       FileSaver.saveAs(
-    process.env.PUBLIC_URL + "/resource/Hemanth_Gummadi_8886866633_8328625444.pdf",
-      "Hemanth_Gummadi_8886866633_8328625444.pdf");
-       }if(event.currentTarget.value==='doc'){
-   window.open('www.ggogle.com','_blank');
- }if(event.currentTarget.value==='AWS'){
-   window.open('www.ggogle.com','_blank');
- }if(event.currentTarget.value==='Validate'){
-   window.open('https://aw.certmetrics.com/amazon/public/verification.aspx','_blank');
- }
- }
+      process.env.PUBLIC_URL + "/resource/AWS_cert.pdf",
+        "Certificate_Hemanth_Gummadi_AWS_Cloud_Practitioner"); }
+    if(event.currentTarget.value==='Java'){
+      FileSaver.saveAs(
+      process.env.PUBLIC_URL + "/resource/Java_cert.pdf",
+        "Certificate_Hemanth_Gummadi_Java_SE11_Programmer");
+       }
+  if(event.currentTarget.value==='Validate'){
+      window.open('https://aw.certmetrics.com/amazon/public/verification.aspx','_blank');
+       }
+  }
 
   toggleCategories() {
 
@@ -47,8 +74,9 @@ class Downloads extends Component {
             Please click on the below Download button to donwload my Resume in PDF format.
             </CardText>
             <CardActions center>
-             <Button onClick={this.fileDownloader.bind(this)} value={'PDF'} colored>Download</Button>
-            <small className="text-muted" style={{opacity: '50%'}}>last updated recently</small></CardActions>
+             <button className='btn btn-primary' onClick={this.fileDownloader.bind(this)} value={'PDF'} colored >Download</button>
+
+            <small className="text-muted" style={{opacity: '50%'}} >{this.timeLeft('pdfTime')}</small></CardActions>
           </Card>
 
           {/* Project 2 */}
@@ -58,8 +86,8 @@ class Downloads extends Component {
                 Please click on the below Download button to donwload my Resume in .docx format.
             </CardText>
             <CardActions border>
-              <Button  onClick={this.fileDownloader.bind(this)} value={'doc'}  colored>Download</Button>
-              <small className="text-muted" style={{opacity: '50%'}}>last updated recently</small>
+            <button className='btn btn-primary' onClick={this.fileDownloader.bind(this)} value={'doc'} colored >Download</button>
+              <small className="text-muted" style={{opacity: '50%'}}>{this.timeLeft('docTime')}</small>
 
             </CardActions>
 
@@ -84,10 +112,10 @@ class Downloads extends Component {
               Please click on the below Download button to donwload my AWS certificate in jpeg format
               </CardText>
               <CardText>
-              Validation ID : 12345678
+              Validation ID : BG635MHCH2Q41P9V
               </CardText>
               <CardActions center>
-              <Button onClick={this.fileDownloader.bind(this)} value={'AWS'} colored>Download</Button>
+              <button className='btn btn-primary' onClick={this.fileDownloader.bind(this)} value={'AWS'} colored >Download</button>
               <Button onClick={this.fileDownloader.bind(this)} value={'Validate'} colored>Validate</Button>
               </CardActions>
             </Card>
@@ -102,7 +130,7 @@ class Downloads extends Component {
                 <hx><medium>Java SE 11 Programmer I | 1Z0-815</medium></hx>
               </CardText>
               <CardActions border>
-                <Button  onClick={this.fileDownloader.bind(this)} value={'doc'}  colored>Download</Button>
+              <button className='btn btn-primary' onClick={this.fileDownloader.bind(this)} value={'Java'} colored >Download</button>
               </CardActions>
 
 

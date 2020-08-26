@@ -952,7 +952,7 @@ if(this.state.activeTab === 0){
        subheader="Jun ’2018 - Aug'2019"
        />
 
-       <CardTitle style={{color: '#ffffff', height: '196px', background: 'url('+ project_BG+') center / cover'}} >Lloys banking group</CardTitle>
+       <CardTitle style={{color: '#ffffff', height: '196px', background: 'url('+ project_BG+') center / cover'}} >Lloyds banking group</CardTitle>
                <CardText>
                 PCM (Payments control manager) is an application which validates and transforms the swift or xml messages from different source systems, and route them to downstream systems based on the routing rules defined.
              </CardText>

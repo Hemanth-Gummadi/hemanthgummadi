@@ -39,11 +39,12 @@
 }
 
 .About-me-BG {
-  background: white;
+  background: #ffffff;
+
+  position: fixed;
+  left: 0;
+  width: 100%;
   height: 100%;
-   left: 0;
-   width: 100%;
-   overflow: hidden;
 }
 
 .resume-BG{

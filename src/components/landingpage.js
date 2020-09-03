@@ -23,7 +23,7 @@ class Landing extends Component {
 
 
 
-          <p>Java(1.11) | Spring MVC/boot | Web services | Oracle sql | React Native | Devops | Maven | Gradle</p>
+          <p>Java(1.11) | Spring MVC/boot | Web services | Oracle sql | React JS | Micro services | Devops | Maven | Gradle</p>
 
         <div className="social-links">
 

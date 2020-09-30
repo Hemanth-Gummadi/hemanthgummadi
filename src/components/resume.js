@@ -26,7 +26,7 @@ class Resume extends Component {
 
             <h4 style={{color: 'grey'}}>Java developer</h4>
             <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
-            <p>Java developer with 6.10 years full time work experience as IT professional having expertise in J2ee technologies and AWS cloud practitioner certified.Quick learner and good performer both in team and independent job environments. Proficient at grasping new
+            <p>Java developer with 7 years full time work experience as IT professional having expertise in J2ee technologies and AWS cloud practitioner certified.Quick learner and good performer both in team and independent job environments. Proficient at grasping new
 concepts, applications and technologies quickly, and utilizing the same in a productive manner.</p>
             <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
             <h5>Address</h5>
@@ -66,7 +66,7 @@ concepts, applications and technologies quickly, and utilizing the same in a pro
                      />
                 <hr style={{borderTop: '3px solid #e22947'}} />
 
-              <h2>Experience <hx><small>(6.10 years)</small></hx></h2>
+              <h2>Experience <hx><small>(7 years)</small></hx></h2>
 
             <Experience
               startYear={2013}

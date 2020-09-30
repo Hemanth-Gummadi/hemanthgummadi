@@ -18,9 +18,9 @@ class Downloads extends Component {
 
    timeLeft(event) {
      if(event ==='pdfTime'){
-       var dateUploaded =  new Date(Date.UTC(2020,7,24));
+       var dateUploaded =  new Date(Date.UTC(2020,8,29));
     }if(event ==='docTime'){
-   dateUploaded =  new Date(Date.UTC(2020,7,24));
+   dateUploaded =  new Date(Date.UTC(2020,8,29));
     }
  var dateNow = new Date();
  var seconds = Math.floor((dateNow - (dateUploaded))/1000);
@@ -30,7 +30,7 @@ class Downloads extends Component {
  hours = hours-(days*24);
  minutes = minutes-(days*24*60)-(hours*60);
  seconds = seconds-(days*24*60*60)-(hours*60*60)-(minutes*60);
-                   return '      last Updated '+ days +'days, '+hours+'hrs ago.'
+                   return '      last Updated '+ days +'day(s), '+hours+'hrs ago.'
   }
 
 

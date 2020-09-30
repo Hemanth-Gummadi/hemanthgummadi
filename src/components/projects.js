@@ -286,7 +286,7 @@ toggleCategoriesDMP(){
         )}else   if(this.state.BDMTactiveTab === 1){
           return(
 <ul>
-<li>Bulk Data Migration tool is an automate tool developed using java, awt and swt toolkits  to migrate the existing BPLM legacy data to Team center</li>
+<li>Bulk Data Migration tool is an automate tool developed using java,swing & awt  toolkits  to migrate the existing BPLM legacy data to Team center</li>
 </ul>          )
         }else   if(this.state.BDMTactiveTab === 2){
           return(
@@ -312,7 +312,7 @@ toggleCategoriesDMP(){
                <summary>
                    Front end
                </summary>
-                <p>swt, awt</p>
+                <p>Swing, awt, swt</p>
             </details>
           </div>          )
         }
@@ -756,6 +756,12 @@ dependencies and fix scm connection .</li>
                        Multithreading
                    </summary>
                     <p>Using Executors api</p>
+               </details>
+               <details >
+                   <summary>
+                       Microservices
+                   </summary>
+                    <p></p>
                </details>
                <details>
                    <summary>

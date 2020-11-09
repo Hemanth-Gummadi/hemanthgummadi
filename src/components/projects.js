@@ -662,7 +662,7 @@ return(
      <summary>
           AWS
      </summary>
-      <p>cloud front deployments</p>
+      <p>S3, EC2, EKS, ECS</p>
  </details>
  <details>
      <summary>
@@ -827,7 +827,7 @@ dependencies and fix scm connection .</li>
                    <summary>
                         AWS
                    </summary>
-                    <p>cloud front deployments</p>
+                    <p>S3, EC2, EKS, ECS</p>
                </details>
 
                </div>
